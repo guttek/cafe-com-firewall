@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Artigos sobre cybersegurança para iniciantes: pentest, engenharia social, principais ataques e como se proteger online." />
+  <meta name="keywords" content="artigos cybersegurança, engenharia social, pentest iniciante, como se proteger de hackers" />
+  <meta name="author" content="Café com Firewall" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Artigos — Café com Firewall" />
+  <meta property="og:description" content="Tutoriais e explicações sobre segurança digital para iniciantes." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://cafecomfirewall.exemplo.com/artigos.html" />
+  <title>Artigos — Café com Firewall</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Menu principal">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M6 13h14v8a5 5 0 01-5 5H11a5 5 0 01-5-5v-8z" stroke="#58a6ff" stroke-width="1.5" fill="none"/>
+          <path d="M20 15h2a3 3 0 010 6h-2" stroke="#58a6ff" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M9 13V10a3 3 0 016 0" stroke="#39d0d8" stroke-width="1.5" stroke-linecap="round"/>
+          <rect x="12" y="17" width="6" height="5" rx="1" fill="#39d0d8"/>
+          <path d="M13.5 17v-1.5a1.5 1.5 0 013 0V17" stroke="#39d0d8" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+        </svg>
+        Café com <span>Firewall</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="artigos.html">Artigos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="cabecalho-pagina">
+        <span class="tag">// artigos</span>
+        <h1>Artigos & Tutoriais</h1>
+        <p>Explicações simples sobre temas complexos — com direito a metáforas de café ☕</p>
+      </div>
+
+      <!-- Artigo + Sidebar -->
+      <div class="layout-artigo">
+        <article class="conteudo-artigo">
+          <span class="tag">Engenharia Social</span>
+          <h1 style="font-size:1.65rem;color:#fff;margin:1rem 0 .5rem;line-height:1.3">
+            Engenharia Social: como hackers enganam pessoas (não computadores)
+          </h1>
+          <div style="display:flex;gap:1rem;color:var(--muted);font-size:.8rem;font-family:var(--mono);margin-bottom:1.75rem;flex-wrap:wrap">
+            <span>📅 Junho 2025</span><span>⏱ 8 min</span><span>👁 2.8k visualizações</span>
+          </div>
+
+          <p>
+            Você instalou antivírus, ativou o firewall, usa senha forte... mas o hacker nem precisou
+            de nada disso. Ele simplesmente <strong style="color:var(--azul)">ligou para você</strong>
+            fingindo ser do suporte técnico e você deu a senha.
+          </p>
+          <p>
+            Isso é <strong style="color:var(--ciano)">Engenharia Social</strong>: a arte de manipular
+            pessoas para obter informações ou acessos que deveriam ser sigilosos. É o ataque mais
+            eficaz do mundo — e o mais subestimado por quem está começando em TI.
+          </p>
+
+          <h2>☕ A metáfora do café</h2>
+          <p>
+            Imagina que sua empresa tem uma catraca com crachá. Um invasor chega carregando
+            caixas pesadas e pede para você segurar a porta "por um segundo". Você segura.
+            Ele entra. Esse golpe se chama <em>tailgating</em> e é 100% engenharia social —
+            ele explorou sua educação, não a fechadura.
+          </p>
+
+          <h2>🎭 As técnicas mais comuns</h2>
+          <p>Aqui estão os golpes de engenharia social que você mais vai encontrar:</p>
+          <ul>
+            <li><strong style="color:var(--azul)">Phishing</strong> — e-mails falsos imitando bancos, lojas ou empresas conhecidas com links maliciosos</li>
+            <li><strong style="color:var(--azul)">Vishing</strong> — ligações fingindo ser suporte técnico, banco ou Receita Federal</li>
+            <li><strong style="color:var(--azul)">Smishing</strong> — mesma coisa do phishing, mas via SMS ou WhatsApp</li>
+            <li><strong style="color:var(--azul)">Pretexting</strong> — o atacante cria uma história falsa convincente para justificar o pedido de informação</li>
+            <li><strong style="color:var(--azul)">Baiting</strong> — deixar um pen-drive "infectado" no corredor esperando que alguém conecte no computador por curiosidade</li>
+          </ul>
+
+          <h2>🔍 Como identificar um ataque</h2>
+          <p>Esses são os sinais de alerta. Se você notar qualquer um deles, desconfie:</p>
+          <pre>⚠ SINAIS DE ALERTA
+─────────────────────────────────────────
+• Urgência exagerada: "Sua conta será bloqueada em 24h!"
+• Pedido de senha ou código de verificação
+• Link com URL estranha ou com erros de digitação
+• E-mail do "banco" com domínio diferente do oficial
+• Ameaça ou promessa de prêmio para pressionar você
+• Alguém que você não conhece pedindo "só um favorzinho"</pre>
+
+          <h2>🛡️ Como se proteger</h2>
+          <p>
+            A boa notícia: com consciência, você já se protege de 90% dos ataques de engenharia social.
+          </p>
+          <ul>
+            <li><strong>Desconfie de urgência</strong> — empresas legítimas não exigem ação imediata por e-mail</li>
+            <li><strong>Nunca dê senhas por telefone</strong> — banco algum pede isso</li>
+            <li><strong>Verifique o remetente</strong> — "bradesco@suporte-urgente.com" não é o Bradesco</li>
+            <li><strong>Ative o 2FA</strong> — mesmo que sua senha seja roubada, o atacante não entra sem o segundo fator</li>
+            <li><strong>Pergunte antes de agir</strong> — em caso de dúvida, desligue e ligue no número oficial</li>
+          </ul>
+
+          <h2>💡 Conclusão</h2>
+          <p>
+            Segurança digital não é só sobre software e firewalls — é sobre pessoas. Os melhores
+            sistemas do mundo falham quando um ser humano é enganado. Por isso o estudo de
+            engenharia social é fundamental para qualquer pessoa que trabalha (ou quer trabalhar)
+            com TI.
+          </p>
+          <p>
+            No próximo artigo falaremos sobre <strong style="color:var(--ciano)">Phishing na prática</strong>:
+            vamos dissecar um e-mail falso linha por linha para você aprender a identificar qualquer tentativa.
+          </p>
+        </article>
+
+        <!-- Sidebar -->
+        <aside role="complementary">
+          <div class="widget">
+            <h4>Outros Artigos</h4>
+            <ul>
+              <li><a href="artigos.html">O que é Phishing?</a></li>
+              <li><a href="artigos.html">Como funciona um Firewall?</a></li>
+              <li><a href="artigos.html">O que é Pentest?</a></li>
+              <li><a href="artigos.html">10 hábitos de segurança</a></li>
+              <li><a href="artigos.html">Vishing: golpe por telefone</a></li>
+              <li><a href="artigos.html">Wi-Fi público: os riscos</a></li>
+            </ul>
+          </div>
+          <div class="widget">
+            <h4>Temas</h4>
+            <ul>
+              <li><a href="artigos.html">🎭 Engenharia Social</a></li>
+              <li><a href="artigos.html">⚔️ Principais Ataques</a></li>
+              <li><a href="artigos.html">🌐 Segurança de Redes</a></li>
+              <li><a href="artigos.html">🔍 Pentest</a></li>
+              <li><a href="artigos.html">🛡️ Como se Proteger</a></li>
+            </ul>
+          </div>
+          <div class="widget">
+            <h4>Dica Rápida ☕</h4>
+            <p style="font-size:.85rem;color:var(--muted);line-height:1.6">
+              Sempre que receber um e-mail urgente pedindo para você clicar em algo,
+              respire fundo, tome um café, e acesse o site diretamente no navegador
+              — nunca pelo link do e-mail.
+            </p>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Glossário -->
+      <section class="secao" aria-labelledby="glossario-titulo">
+        <h2 class="titulo-secao" id="glossario-titulo">Glossário de <span>Termos</span></h2>
+        <p class="sub-secao">Dicionário de cybersegurança — busque qualquer termo</p>
+        <input
+          type="search"
+          id="buscaGlossario"
+          class="busca-glossario"
+          placeholder="🔍 Buscar termo... ex: malware, firewall, VPN"
+          aria-label="Buscar no glossário"
+        />
+        <div role="list">
+          <div class="item-glossario" role="listitem">
+            <div class="termo">Phishing</div>
+            <div class="definicao">Golpe que usa e-mails, sites ou mensagens falsos para enganar a vítima e roubar dados como senha e número de cartão.</div>
+          </div>
+          <div class="item-glossario" role="listitem">
+            <div class="termo">Malware</div>
+            <div class="definicao">Qualquer software malicioso criado para causar dano. Inclui vírus, ransomware, spyware, trojans e outros.</div>
+          </div>
+          <div class="item-glossario" role="listitem">
+            <div class="termo">Ransomware</div>
+            <div class="definicao">Malware que criptografa seus arquivos e exige pagamento (resgate) para liberar o acesso. Hospitais, empresas e prefeituras já foram vítimas.</div>
+          </div>
+          <div class="item-glossario" role="listitem">
+            <div class="termo">Firewall</div>
+            <div class="definicao">Sistema que monitora e filtra o tráfego de rede, bloqueando conexões suspeitas ou não autorizadas. É o porteiro da sua rede.</div>
+          </div>
+          <div class="item-glossario" role="listitem">
+            <div class="termo">VPN (Virtual Private Network)</div>
+            <div class="definicao">Cria um "túnel" criptografado entre seu dispositivo e a internet. Protege seus dados em redes Wi-Fi públicas e esconde seu IP.</div>
+          </div>
+          <div class="item-glossario" role="listitem">
+            <div class="termo">2FA — Autenticação em Dois Fatores</div>
+            <div class="definicao">Exige dois "provas" para entrar: algo que você sabe (senha) + algo que você tem (código no celular). Mesmo com a senha roubada, o invasor não entra.</div>
+          </div>
+          <div class="item-glossario" role="listitem">
+            <div class="termo">Pentest (Penetration Test)</div>
+            <div class="definicao">Teste de invasão autorizado onde um profissional tenta "hackear" um sistema para encontrar falhas antes que criminosos o façam.</div>
+          </div>
+          <div class="item-glossario" role="listitem">
+            <div class="termo">Engenharia Social</div>
+            <div class="definicao">Manipulação psicológica de pessoas para que revelem informações confidenciais. Explora confiança, urgência e medo — não falhas técnicas.</div>
+          </div>
+          <div class="item-glossario" role="listitem">
+            <div class="termo">DDoS (Distributed Denial of Service)</div>
+            <div class="definicao">Ataque que sobrecarrega um servidor com milhares de requisições simultâneas até derrubá-lo. Pense em mil pessoas tentando entrar por uma porta ao mesmo tempo.</div>
+          </div>
+          <div class="item-glossario" role="listitem">
+            <div class="termo">Zero-Day</div>
+            <div class="definicao">Vulnerabilidade desconhecida pelo fabricante do software, sem correção disponível. Muito valiosa para atacantes — e perigosa para todos.</div>
+          </div>
+          <div class="item-glossario" role="listitem">
+            <div class="termo">Brute Force (Força Bruta)</div>
+            <div class="definicao">Ataque que testa automaticamente milhares de combinações de senha até acertar. Senhas curtas caem em segundos; senhas longas levam anos.</div>
+          </div>
+          <div class="item-glossario" role="listitem">
+            <div class="termo">Vishing</div>
+            <div class="definicao">Phishing feito por voz (ligação telefônica). O golpista finge ser do banco, da operadora ou da Receita Federal para te convencer a passar dados.</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-marca">
+          <a href="index.html" class="logo">
+            <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M6 13h14v8a5 5 0 01-5 5H11a5 5 0 01-5-5v-8z" stroke="#58a6ff" stroke-width="1.5" fill="none"/>
+              <path d="M20 15h2a3 3 0 010 6h-2" stroke="#58a6ff" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M9 13V10a3 3 0 016 0" stroke="#39d0d8" stroke-width="1.5" stroke-linecap="round"/>
+              <rect x="12" y="17" width="6" height="5" rx="1" fill="#39d0d8"/>
+              <path d="M13.5 17v-1.5a1.5 1.5 0 013 0V17" stroke="#39d0d8" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+            </svg>
+            Café com <span>Firewall</span>
+          </a>
+          <p>Cybersegurança para quem está começando — sem enrolação, com muito café. ☕</p>
+        </div>
+        <div class="footer-col">
+          <h5>Páginas</h5>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="artigos.html">Artigos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Temas</h5>
+          <ul>
+            <li><a href="artigos.html">Pentest</a></li>
+            <li><a href="artigos.html">Principais Ataques</a></li>
+            <li><a href="artigos.html">Segurança de Redes</a></li>
+            <li><a href="artigos.html">Engenharia Social</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>© 2025 Café com Firewall — conteúdo educacional</span>
+        <span>HTML5 · CSS3 · JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

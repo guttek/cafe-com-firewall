@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Café com Firewall — blog de cybersegurança para iniciantes em TI. Aprenda sobre pentest, ataques, engenharia social e como se proteger online." />
+  <meta name="keywords" content="cybersegurança para iniciantes, pentest, engenharia social, como se proteger online, segurança de redes" />
+  <meta name="author" content="Café com Firewall" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Café com Firewall — Cybersegurança para Iniciantes" />
+  <meta property="og:description" content="Aprenda cybersegurança de um jeito descontraído e didático." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://cafecomfirewall.exemplo.com/" />
+  <title>Café com Firewall — Cybersegurança para Iniciantes</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Menu principal">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="Café com Firewall - início">
+        <!-- Logo: xícara + cadeado em SVG simples -->
+        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Xícara -->
+          <path d="M6 13h14v8a5 5 0 01-5 5H11a5 5 0 01-5-5v-8z" fill="#58a6ff" opacity=".25"/>
+          <path d="M6 13h14v8a5 5 0 01-5 5H11a5 5 0 01-5-5v-8z" stroke="#58a6ff" stroke-width="1.5" fill="none"/>
+          <path d="M20 15h2a3 3 0 010 6h-2" stroke="#58a6ff" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M9 13V10a3 3 0 016 0" stroke="#39d0d8" stroke-width="1.5" stroke-linecap="round"/>
+          <!-- Vapor -->
+          <path d="M10 10 Q11 8 10 6" stroke="#39d0d8" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+          <path d="M14 10 Q15 8 14 6" stroke="#39d0d8" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+          <!-- Cadeado pequeno no centro da xícara -->
+          <rect x="12" y="17" width="6" height="5" rx="1" fill="#39d0d8"/>
+          <path d="M13.5 17v-1.5a1.5 1.5 0 013 0V17" stroke="#39d0d8" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+        </svg>
+        Café com <span>Firewall</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="artigos.html">Artigos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" role="banner">
+    <div class="container">
+      <!-- Logo grande -->
+      <svg class="hero-logo-big" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="36" cy="36" r="36" fill="rgba(88,166,255,.08)"/>
+        <path d="M18 30h24v14a8 8 0 01-8 8H26a8 8 0 01-8-8V30z" fill="#58a6ff" opacity=".2"/>
+        <path d="M18 30h24v14a8 8 0 01-8 8H26a8 8 0 01-8-8V30z" stroke="#58a6ff" stroke-width="2" fill="none"/>
+        <path d="M42 34h4a4 4 0 010 8h-4" stroke="#58a6ff" stroke-width="2" stroke-linecap="round"/>
+        <path d="M23 30V24a7 7 0 0114 0" stroke="#39d0d8" stroke-width="2" stroke-linecap="round"/>
+        <path d="M25 30 Q27 26 25 22" stroke="#39d0d8" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        <path d="M30 30 Q32 26 30 22" stroke="#39d0d8" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        <rect x="27" y="37" width="9" height="8" rx="2" fill="#39d0d8"/>
+        <path d="M29 37v-3a3 3 0 016 0v3" stroke="#39d0d8" stroke-width="2" stroke-linecap="round" fill="none"/>
+      </svg>
+
+      <div class="tagline">
+        <span class="dot"></span>
+        Cybersegurança para quem está começando ☕
+      </div>
+
+      <h1>Segurança digital<br>explicada com <em>café</em></h1>
+      <p class="hero-sub">
+        Aprenda pentest, engenharia social, principais ataques e como se proteger
+        — tudo de um jeito simples, didático e sem enrolação.
+      </p>
+      <div class="hero-btns">
+        <a href="artigos.html" class="btn btn-primary">Ver artigos</a>
+        <a href="sobre.html"   class="btn btn-outline">Sobre o blog</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- STATS -->
+    <section class="secao" aria-label="Estatísticas do blog">
+      <div class="container">
+        <div class="grade-stats">
+          <div class="stat">
+            <span class="stat-num" data-conta="36" data-suf="+">0</span>
+            <div class="stat-label">Artigos publicados</div>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-conta="5" data-suf="">0</span>
+            <div class="stat-label">Temas cobertos</div>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-conta="2100" data-suf="+">0</span>
+            <div class="stat-label">Leitores/mês</div>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-conta="100" data-suf="%">0</span>
+            <div class="stat-label">Gratuito</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTAQUE -->
+    <section class="secao" aria-labelledby="destaque-titulo">
+      <div class="container">
+        <div class="destaque">
+          <div>
+            <div class="destaque-badge">// artigo em destaque</div>
+            <h2 id="destaque-titulo">Engenharia Social: como hackers enganam pessoas (não computadores)</h2>
+            <p>
+              Você sabia que a maioria dos ataques bem-sucedidos começa enganando
+              uma pessoa, não um sistema? Neste artigo explicamos as técnicas mais
+              comuns de engenharia social e como identificar quando você está sendo
+              manipulado.
+            </p>
+            <a href="artigos.html" class="btn btn-primary">Ler artigo</a>
+          </div>
+          <div class="destaque-emoji" aria-hidden="true">🎭</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÚLTIMOS ARTIGOS -->
+    <section class="secao" aria-labelledby="posts-titulo">
+      <div class="container">
+        <h2 class="titulo-secao" id="posts-titulo">Últimos <span>Artigos</span></h2>
+        <p class="sub-secao">Conteúdo novo toda semana — do básico ao intermediário</p>
+
+        <div class="grade-posts">
+
+          <article class="card-post" onclick="location.href='artigos.html'" tabindex="0" role="link">
+            <span class="tag">Ataques</span>
+            <div class="card-meta"><span>📅 Jun 2025</span><span>⏱ 5 min</span></div>
+            <h3>O que é Phishing e como não cair nessa armadilha</h3>
+            <p>Aquele e-mail do "banco" pode ser uma fraude. Aprenda a identificar tentativas de phishing antes de clicar em qualquer link.</p>
+            <div class="card-rodape"><span>👁 1.4k</span><span class="leia-mais">Ler →</span></div>
+          </article>
+
+          <article class="card-post" onclick="location.href='artigos.html'" tabindex="0" role="link">
+            <span class="tag">Redes</span>
+            <div class="card-meta"><span>📅 Jun 2025</span><span>⏱ 7 min</span></div>
+            <h3>Como funciona um Firewall? Guia para quem nunca estudou isso</h3>
+            <p>O firewall é o porteiro da sua rede. Mas como ele decide quem pode entrar? Explicamos de forma simples e visual.</p>
+            <div class="card-rodape"><span>👁 980</span><span class="leia-mais">Ler →</span></div>
+          </article>
+
+          <article class="card-post" onclick="location.href='artigos.html'" tabindex="0" role="link">
+            <span class="tag">Pentest</span>
+            <div class="card-meta"><span>📅 Mai 2025</span><span>⏱ 8 min</span></div>
+            <h3>O que é Pentest? Entendendo o hacker do bem</h3>
+            <p>Sim, existe hacker "do bem"! O pentester é contratado para tentar invadir sistemas e encontrar falhas antes dos criminosos.</p>
+            <div class="card-rodape"><span>👁 2.2k</span><span class="leia-mais">Ler →</span></div>
+          </article>
+
+          <article class="card-post" onclick="location.href='artigos.html'" tabindex="0" role="link">
+            <span class="tag">Proteção</span>
+            <div class="card-meta"><span>📅 Mai 2025</span><span>⏱ 4 min</span></div>
+            <h3>10 hábitos de segurança digital para adotar ainda hoje</h3>
+            <p>Não precisa ser especialista para se proteger. Essas 10 práticas simples já colocam você muito à frente da média.</p>
+            <div class="card-rodape"><span>👁 3.1k</span><span class="leia-mais">Ler →</span></div>
+          </article>
+
+          <article class="card-post" onclick="location.href='artigos.html'" tabindex="0" role="link">
+            <span class="tag">Engenharia Social</span>
+            <div class="card-meta"><span>📅 Abr 2025</span><span>⏱ 6 min</span></div>
+            <h3>Vishing: quando o golpe chega pelo telefone</h3>
+            <p>Ligações fingindo ser do banco, da Receita Federal ou da operadora. Como o vishing funciona e o que fazer ao receber uma ligação suspeita.</p>
+            <div class="card-rodape"><span>👁 870</span><span class="leia-mais">Ler →</span></div>
+          </article>
+
+          <article class="card-post" onclick="location.href='artigos.html'" tabindex="0" role="link">
+            <span class="tag">Redes</span>
+            <div class="card-meta"><span>📅 Abr 2025</span><span>⏱ 6 min</span></div>
+            <h3>Wi-Fi público: o que pode acontecer quando você se conecta</h3>
+            <p>Aeroporto, shopping, café... essas redes abertas podem ser armadilhas. Saiba os riscos e como usar VPN para se proteger.</p>
+            <div class="card-rodape"><span>👁 1.9k</span><span class="leia-mais">Ler →</span></div>
+          </article>
+
+        </div>
+
+        <div style="text-align:center;margin-top:2rem">
+          <a href="artigos.html" class="btn btn-outline">Ver todos os artigos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="secao" aria-labelledby="quiz-titulo">
+      <div class="container">
+        <h2 class="titulo-secao" id="quiz-titulo">Teste seu <span>Conhecimento</span></h2>
+        <p class="sub-secao">Quiz rápido — 5 perguntas sobre segurança digital</p>
+        <div id="quiz" class="quiz-box" role="region" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-marca">
+          <a href="index.html" class="logo">
+            <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M6 13h14v8a5 5 0 01-5 5H11a5 5 0 01-5-5v-8z" stroke="#58a6ff" stroke-width="1.5" fill="none"/>
+              <path d="M20 15h2a3 3 0 010 6h-2" stroke="#58a6ff" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M9 13V10a3 3 0 016 0" stroke="#39d0d8" stroke-width="1.5" stroke-linecap="round"/>
+              <rect x="12" y="17" width="6" height="5" rx="1" fill="#39d0d8"/>
+              <path d="M13.5 17v-1.5a1.5 1.5 0 013 0V17" stroke="#39d0d8" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+            </svg>
+            Café com <span>Firewall</span>
+          </a>
+          <p>Cybersegurança explicada para quem está começando — sem termos difíceis, com muito café. ☕</p>
+        </div>
+        <div class="footer-col">
+          <h5>Páginas</h5>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="artigos.html">Artigos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Temas</h5>
+          <ul>
+            <li><a href="artigos.html">Pentest</a></li>
+            <li><a href="artigos.html">Principais Ataques</a></li>
+            <li><a href="artigos.html">Segurança de Redes</a></li>
+            <li><a href="artigos.html">Engenharia Social</a></li>
+            <li><a href="artigos.html">Como se Proteger</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>© 2025 Café com Firewall — conteúdo educacional</span>
+        <span>HTML5 · CSS3 · JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

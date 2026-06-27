@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entre em contato com o Café com Firewall — sugestões de pauta, dúvidas ou parcerias sobre cybersegurança." />
+  <meta name="keywords" content="contato café com firewall, sugestão pauta cybersegurança, dúvida segurança digital" />
+  <meta name="author" content="Café com Firewall" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Contato — Café com Firewall" />
+  <meta property="og:description" content="Fale com a equipe do Café com Firewall." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://cafecomfirewall.exemplo.com/contato.html" />
+  <title>Contato — Café com Firewall</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Menu principal">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M6 13h14v8a5 5 0 01-5 5H11a5 5 0 01-5-5v-8z" stroke="#58a6ff" stroke-width="1.5" fill="none"/>
+          <path d="M20 15h2a3 3 0 010 6h-2" stroke="#58a6ff" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M9 13V10a3 3 0 016 0" stroke="#39d0d8" stroke-width="1.5" stroke-linecap="round"/>
+          <rect x="12" y="17" width="6" height="5" rx="1" fill="#39d0d8"/>
+          <path d="M13.5 17v-1.5a1.5 1.5 0 013 0V17" stroke="#39d0d8" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+        </svg>
+        Café com <span>Firewall</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="artigos.html">Artigos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="cabecalho-pagina">
+        <span class="tag">// contato</span>
+        <h1>Fale Conosco</h1>
+        <p>Sugestão de pauta, dúvida técnica ou só quer bater um papo sobre cybersec? ☕</p>
+      </div>
+
+      <div class="grade-contato">
+
+        <!-- Informações -->
+        <aside>
+          <p>
+            Use o formulário ao lado para entrar em contato. Respondemos todas as mensagens
+            em até 48 horas — tempo suficiente para tomar vários cafés enquanto aguarda.
+          </p>
+
+          <div class="detalhe">
+            <div class="icone" aria-hidden="true">📧</div>
+            <div>
+              <div style="font-size:.78rem;color:var(--muted);font-family:var(--mono)">E-mail</div>
+              <div style="font-size:.9rem">contato@cafecomfirewall.exemplo.com</div>
+            </div>
+          </div>
+          <div class="detalhe">
+            <div class="icone" aria-hidden="true">💬</div>
+            <div>
+              <div style="font-size:.78rem;color:var(--muted);font-family:var(--mono)">Discord</div>
+              <div style="font-size:.9rem">discord.gg/cafecomfirewall</div>
+            </div>
+          </div>
+          <div class="detalhe">
+            <div class="icone" aria-hidden="true">🐙</div>
+            <div>
+              <div style="font-size:.78rem;color:var(--muted);font-family:var(--mono)">GitHub</div>
+              <div style="font-size:.9rem">github.com/cafecomfirewall</div>
+            </div>
+          </div>
+          <div class="detalhe">
+            <div class="icone" aria-hidden="true">📸</div>
+            <div>
+              <div style="font-size:.78rem;color:var(--muted);font-family:var(--mono)">Instagram</div>
+              <div style="font-size:.9rem">@cafecomfirewall</div>
+            </div>
+          </div>
+
+          <div style="margin-top:1.75rem;background:rgba(88,166,255,.07);border:1px solid rgba(88,166,255,.2);border-radius:var(--radius);padding:1.1rem">
+            <div style="font-size:.78rem;font-family:var(--mono);color:var(--azul);margin-bottom:.45rem;text-transform:uppercase;letter-spacing:.07em">
+              ☕ Quer escrever para o blog?
+            </div>
+            <p style="font-size:.85rem;color:var(--muted)">
+              Aceitamos contribuições externas! Se você tem algo a ensinar
+              sobre cybersegurança de forma acessível, nos envie uma proposta
+              pelo formulário com o assunto "Quero Contribuir".
+            </p>
+          </div>
+        </aside>
+
+        <!-- Formulário -->
+        <section aria-labelledby="form-titulo">
+          <h2 id="form-titulo" style="font-size:1.15rem;color:#fff;margin-bottom:1.35rem">Enviar Mensagem</h2>
+
+          <form id="formContato" novalidate aria-label="Formulário de contato">
+
+            <div class="grupo">
+              <label for="nome">Seu nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Como você se chama?" autocomplete="name" aria-required="true" />
+              <span class="erro" role="alert">Informe seu nome (mínimo 2 letras).</span>
+            </div>
+
+            <div class="grupo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" aria-required="true" />
+              <span class="erro" role="alert">E-mail inválido.</span>
+            </div>
+
+            <div class="grupo">
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto" aria-required="true">
+                <option value="">Selecione um assunto...</option>
+                <option value="sugestao">Sugestão de pauta</option>
+                <option value="duvida">Dúvida técnica</option>
+                <option value="contribuir">Quero Contribuir</option>
+                <option value="parceria">Proposta de parceria</option>
+                <option value="elogio">Elogio (café virtual ☕)</option>
+                <option value="outro">Outro</option>
+              </select>
+              <span class="erro" role="alert">Selecione um assunto.</span>
+            </div>
+
+            <div class="grupo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Pode escrever à vontade! Mínimo 20 caracteres." aria-required="true"></textarea>
+              <span class="erro" role="alert">Escreva pelo menos 20 caracteres.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%">
+              Enviar Mensagem ☕
+            </button>
+
+            <div id="toast" class="toast" role="status" aria-live="polite">
+              ✓ Mensagem enviada! A gente responde em até 48h. Enquanto isso... tome um café! ☕
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <!-- FAQ -->
+      <section class="secao" aria-labelledby="faq-titulo">
+        <h2 class="titulo-secao" id="faq-titulo">Perguntas <span>Frequentes</span></h2>
+        <p class="sub-secao">As dúvidas mais comuns antes de entrar em contato</p>
+        <div style="max-width:680px">
+          <div class="item-glossario">
+            <div class="termo">O blog é mesmo gratuito?</div>
+            <div class="definicao">Sim, 100%! Não temos paywall, assinatura nem nada pago. Nosso objetivo é democratizar o conhecimento em cybersegurança.</div>
+          </div>
+          <div class="item-glossario">
+            <div class="termo">Posso compartilhar os artigos?</div>
+            <div class="definicao">Pode e muito! Só pedimos que mencione o Café com Firewall como fonte e inclua o link para o artigo original.</div>
+          </div>
+          <div class="item-glossario">
+            <div class="termo">Vocês indicam cursos ou certificações?</div>
+            <div class="definicao">Sim! Dentro de vários artigos indicamos recursos gratuitos e pagos para aprofundar o estudo. Temos um artigo específico sobre trilha de aprendizado em cybersec.</div>
+          </div>
+          <div class="item-glossario">
+            <div class="termo">Consigo aprender cybersegurança só pelo blog?</div>
+            <div class="definicao">O blog é um ótimo ponto de partida para conceitos e mentalidade. Para prática, recomendamos plataformas como TryHackMe e Hack The Box (ambas têm trilhas para iniciantes).</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-marca">
+          <a href="index.html" class="logo">
+            <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M6 13h14v8a5 5 0 01-5 5H11a5 5 0 01-5-5v-8z" stroke="#58a6ff" stroke-width="1.5" fill="none"/>
+              <path d="M20 15h2a3 3 0 010 6h-2" stroke="#58a6ff" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M9 13V10a3 3 0 016 0" stroke="#39d0d8" stroke-width="1.5" stroke-linecap="round"/>
+              <rect x="12" y="17" width="6" height="5" rx="1" fill="#39d0d8"/>
+              <path d="M13.5 17v-1.5a1.5 1.5 0 013 0V17" stroke="#39d0d8" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+            </svg>
+            Café com <span>Firewall</span>
+          </a>
+          <p>Cybersegurança para quem está começando — sem enrolação, com muito café. ☕</p>
+        </div>
+        <div class="footer-col">
+          <h5>Páginas</h5>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="artigos.html">Artigos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Temas</h5>
+          <ul>
+            <li><a href="artigos.html">Pentest</a></li>
+            <li><a href="artigos.html">Principais Ataques</a></li>
+            <li><a href="artigos.html">Segurança de Redes</a></li>
+            <li><a href="artigos.html">Engenharia Social</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>© 2025 Café com Firewall — conteúdo educacional</span>
+        <span>HTML5 · CSS3 · JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
